@@ -8,8 +8,9 @@ def bubble_sort(array)
         swapped = true
       end
     end
-    break unless swapped
+    return array unless swapped
   end
+  array
 end
 
 def bubble_sort_by(array)
@@ -24,6 +25,7 @@ def bubble_sort_by(array)
         swapped = true
       end
     end
-    break unless swapped
+    return array unless swapped
   end
+  array
 end
