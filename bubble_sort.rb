@@ -1,9 +1,9 @@
 def bubble_sort(array)
   print "IN : #{array}\n"
   iteration = array.length - 1
-  (0...iteration).each do |_round|  # 1 ROUND ITERATION
+  (0...iteration).each do |_round|
     swapped = false
-    (0...iteration).each do |i|   # 2 ITEM ITERATION
+    (0...(iteration - _round)).each do |i|
         if array[i] > array[i + 1]
             array[i], array[i + 1] = array[i + 1], array[i]        
             swapped = true
