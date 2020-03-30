@@ -4,18 +4,25 @@
 
 # Bubble-Sort-Algorithm
 
-> Cloning <https://thenextweb.com/> website according to the responsive design rules.
+> One of the simpler ways of sorting a group of items in an array is bubble sort. We are re-creating this method in our project.
 
-Additional description about the project and its features.
+You will find two functions in our code:
+
+1. bubble_sort Function that sorts a given array of numbers.
+2. bubble_sort_by Function that sorts a given array of items. It accepts blocks that compares items in the array by using yield method and return value of the block.
+
+Both of them optimized with two optimizations:
+
+1. Decreasing number of iteration for each round.
+2. Swap check: break if not swapped.
 
 ## Built With
 
-- HTML 5
-- CSS 3
+- Ruby
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://repl.it/@kblycaglayan/bubblesort)
 
 ## Getting Started
 
@@ -23,12 +30,31 @@ To get a local copy up and running follow these steps:
 
 ### Prerequisites
 
-A browser (preferably Chrome)
+- Ruby installed on local machine
+- A browser (for usage or repl.it)
 
 ### Usage
 
+#### Preview with repl.it in [Live Demo Link](https://repl.it/@kblycaglayan/bubblesort)
+
+OR:
+
 - Fork/Clone this project to your local machine
-- Open index.html in your browser
+- Open bubble_sort.rb in your local enviroment and run this code:
+
+```
+## Testing bubble_sort
+
+p t_array = [4, 3, 78, 2, 0, 2]
+p bubble_sort(t_array)
+
+
+## Testing bubble_sort_by
+
+p bubble_sort_by(%w[hi hello hey]) do |left, right|
+  left.length - right.length
+end
+```
 
 ## Authors
 
@@ -50,8 +76,7 @@ A browser (preferably Chrome)
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](<https://github.com/ikraamg/Design-Teardown-Heatmap/>
-/issues)
+Feel free to check the [issues page](https://github.com/kblycaglayan/bubble-sort/issues)
 
 Start by:
 
@@ -70,8 +95,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - The Odin project for the project plan
-- sanitize.css creators for the web reset
-- <https://thenextweb.com/>
 
 ## 📝 License
 
